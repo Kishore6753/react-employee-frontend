@@ -1,0 +1,194 @@
+2026-01-16 05:59:27,873 - Knowledge - INFO - Created shared MongoDB connection pool
+2026-01-16 05:59:27,875 - Knowledge - INFO - Starting Knowledge Graph processing with 20 threads
+2026-01-16 05:59:27,880 - Knowledge - INFO - Initial configuration: chunk_size=65536, max_cache_size=500
+2026-01-16 05:59:27,882 - Knowledge - INFO - Knowledge Graph concurrency configuration: workers=20, max_batch_size=10, max_concurrent_llm_calls=50
+2026-01-16 05:59:29,139 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2026-01-16 05:59:29,139 - Knowledge - WARNING - ❌ load_from_redis method not found - Redis support not attached
+2026-01-16 05:59:29,140 - Knowledge - INFO - load persisted knowledge: begin
+2026-01-16 05:59:29,145 - Knowledge - INFO - Loaded 0 files from persisted knowledge
+2026-01-16 05:59:29,145 - Knowledge - INFO - load persisted knowledge: end
+2026-01-16 05:59:29,146 - Knowledge - WARNING - No persisted knowledge found. Files will be queued during start()
+2026-01-16 05:59:29,156 - Knowledge - INFO - Redis support added with prefix knowledge:b35376z:
+2026-01-16 05:59:29,195 - Knowledge - INFO - Starting knowledge initialization for ID: yy4gpD-b35376z
+2026-01-16 05:59:29,195 - Knowledge - INFO - 🔍 Checking Redis for build_id: b35376z
+2026-01-16 05:59:29,195 - Knowledge - INFO - 🔍 Full session ID: yy4gpD-b35376z
+2026-01-16 05:59:29,196 - Knowledge - INFO - 🔍 Redis prefix will be: knowledge:b35376z:
+2026-01-16 05:59:29,196 - Knowledge - INFO - 🔍 Using attached load_from_redis() method
+2026-01-16 05:59:29,196 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2026-01-16 05:59:29,197 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b35376z
+2026-01-16 05:59:29,203 - Knowledge - WARNING - ❌ No Redis cache found
+2026-01-16 05:59:29,216 - Knowledge - INFO - 📁 Loading knowledge from disk...
+2026-01-16 05:59:29,278 - Knowledge - INFO - load persisted docinfo: begin
+2026-01-16 05:59:29,280 - Knowledge - INFO - load persisted docinfo: end
+2026-01-16 05:59:29,280 - Knowledge - INFO - 🔍 _load_persisted_knowledge called - checking for Redis optimization
+2026-01-16 05:59:29,281 - Knowledge - INFO - ✅ load_from_redis method found - attempting Redis load
+2026-01-16 05:59:29,281 - Knowledge - INFO - 🔍 Attempting to load knowledge from Redis...
+2026-01-16 05:59:29,282 - Knowledge - INFO - 🔍 Using derived instance_id for Redis lookup: b35376z
+2026-01-16 05:59:29,288 - Knowledge - WARNING - ❌ No Redis cache found
+2026-01-16 05:59:29,289 - Knowledge - INFO - ❌ Redis load returned False - falling back to file loading
+2026-01-16 05:59:29,290 - Knowledge - INFO - load persisted knowledge: begin
+2026-01-16 05:59:29,293 - Knowledge - INFO - Loaded 0 files from persisted knowledge
+2026-01-16 05:59:29,293 - Knowledge - INFO - load persisted knowledge: end
+2026-01-16 05:59:29,294 - Knowledge - INFO - 📁 Disk load complete in 0.08s
+2026-01-16 05:59:29,295 - Knowledge - INFO - Populating ingest queue with source files...
+2026-01-16 05:59:29,306 - Knowledge - INFO - Added 16 files from /app/data/T0002/199693/b35376z/react-employee-frontend to ingest queue
+2026-01-16 05:59:29,307 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 159, Duration: 0ms
+2026-01-16 05:59:29,308 - Knowledge - INFO - Worker kw1 created using shared MongoDB connection pool
+2026-01-16 05:59:29,309 - Knowledge - INFO - knowledge worker kw1 start
+2026-01-16 05:59:29,309 - Knowledge - INFO - Worker kw2 created using shared MongoDB connection pool
+2026-01-16 05:59:29,310 - Knowledge - INFO - [kw1] Queue=16, InProgress=0, PendingWorkers=0/1, Completed=0/16 (0.0%)
+2026-01-16 05:59:29,310 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=16, active_workers=0/1
+2026-01-16 05:59:29,310 - Knowledge - INFO - knowledge worker kw2 start
+2026-01-16 05:59:29,310 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/199693/b35376z/react-employee-frontend/src/App.css
+2026-01-16 05:59:29,311 - Knowledge - INFO - [kw2] Queue=12, InProgress=0, PendingWorkers=1/1, Completed=0/16 (0.0%)
+2026-01-16 05:59:29,312 - Knowledge - INFO - Worker kw3 created using shared MongoDB connection pool
+2026-01-16 05:59:29,312 - Knowledge - INFO - Fast-tracked /app/data/T0002/199693/b35376z/react-employee-frontend/src/App.css (ext=.css, size=706)
+2026-01-16 05:59:29,313 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=12, active_workers=1/2
+2026-01-16 05:59:29,313 - Knowledge - INFO - knowledge worker kw3 start
+2026-01-16 05:59:29,314 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/199693/b35376z/react-employee-frontend/src/services/EmployeeService.js
+2026-01-16 05:59:29,314 - Knowledge - INFO - Worker kw4 created using shared MongoDB connection pool
+2026-01-16 05:59:29,315 - Knowledge - INFO - Worker kw2 processing /app/data/T0002/199693/b35376z/react-employee-frontend/src/components/CreateEmployeeComponent.jsx
+2026-01-16 05:59:29,315 - Knowledge - INFO - [kw3] Queue=8, InProgress=0, PendingWorkers=2/3, Completed=0/16 (0.0%)
+2026-01-16 05:59:29,316 - Knowledge - INFO - Fast-tracked /app/data/T0002/199693/b35376z/react-employee-frontend/src/services/EmployeeService.js (ext=.js, size=682)
+2026-01-16 05:59:29,316 - Knowledge - INFO - knowledge worker kw4 start
+2026-01-16 05:59:29,317 - Knowledge - INFO - Worker kw5 created using shared MongoDB connection pool
+2026-01-16 05:59:29,319 - Knowledge - INFO - Worker kw2 processing /app/data/T0002/199693/b35376z/react-employee-frontend/src/components/ViewEmployeeComponent.jsx
+2026-01-16 05:59:29,319 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=8, active_workers=2/4
+2026-01-16 05:59:29,319 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/199693/b35376z/react-employee-frontend/src/App.js
+2026-01-16 05:59:29,320 - Knowledge - INFO - [kw4] Queue=8, InProgress=0, PendingWorkers=2/4, Completed=0/16 (0.0%)
+2026-01-16 05:59:29,321 - Knowledge - INFO - knowledge worker kw5 start
+2026-01-16 05:59:29,321 - Knowledge - INFO - Fast-tracked /app/data/T0002/199693/b35376z/react-employee-frontend/src/components/ViewEmployeeComponent.jsx (ext=.jsx, size=1509)
+2026-01-16 05:59:29,322 - Knowledge - INFO - Worker kw3 processing /app/data/T0002/199693/b35376z/react-employee-frontend/src/components/HeaderComponent.js
+2026-01-16 05:59:29,322 - Knowledge - INFO - Worker kw6 created using shared MongoDB connection pool
+2026-01-16 05:59:29,323 - Knowledge - INFO - Fast-tracked /app/data/T0002/199693/b35376z/react-employee-frontend/src/App.js (ext=.js, size=1403)
+2026-01-16 05:59:29,323 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=8, active_workers=3/5
+2026-01-16 05:59:29,324 - Knowledge - INFO - [kw5] Queue=4, InProgress=0, PendingWorkers=3/5, Completed=0/16 (0.0%)
+2026-01-16 05:59:29,324 - Knowledge - INFO - Worker kw2 processing /app/data/T0002/199693/b35376z/react-employee-frontend/src/components/UpdateEmployeeComponent.jsx
+2026-01-16 05:59:29,325 - Knowledge - INFO - Fast-tracked /app/data/T0002/199693/b35376z/react-employee-frontend/src/components/HeaderComponent.js (ext=.js, size=585)
+2026-01-16 05:59:29,325 - Knowledge - INFO - knowledge worker kw6 start
+2026-01-16 05:59:29,326 - Knowledge - INFO - Worker kw1 processing /app/data/T0002/199693/b35376z/react-employee-frontend/src/components/ListEmployeeComponent.jsx
+2026-01-16 05:59:29,326 - Knowledge - INFO - Worker kw7 created using shared MongoDB connection pool
+2026-01-16 05:59:29,327 - Knowledge - INFO - Worker kw4 processing /app/data/T0002/199693/b35376z/react-employee-frontend/src/index.css
+2026-01-16 05:59:29,327 - Knowledge - INFO - Batch sizing: calculated=4, max_allowed=10, queue=4, active_workers=4/6
+2026-01-16 05:59:29,328 - Knowledge - INFO - Worker kw2 processing /app/data/T0002/199693/b35376z/react-employee-frontend/src/components/FooterComponent.jsx
+2026-01-16 05:59:29,328 - Knowledge - INFO - Worker kw3 processing /app/data/T0002/199693/b35376z/react-employee-frontend/src/serviceWorker.js
+2026-01-16 05:59:29,330 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 159, Duration: 0ms
+2026-01-16 05:59:29,330 - Knowledge - INFO - knowledge worker kw7 start
+2026-01-16 05:59:29,330 - Knowledge - INFO - Fast-tracked /app/data/T0002/199693/b35376z/react-employee-frontend/src/index.css (ext=.css, size=366)
+2026-01-16 05:59:29,330 - Knowledge - INFO - Worker kw8 created using shared MongoDB connection pool
+2026-01-16 05:59:29,331 - Knowledge - INFO - Fast-tracked /app/data/T0002/199693/b35376z/react-employee-frontend/src/components/FooterComponent.jsx (ext=.jsx, size=473)
+2026-01-16 05:59:29,332 - Knowledge - INFO - Worker kw3 processing /app/data/T0002/199693/b35376z/react-employee-frontend/src/index.js
+2026-01-16 05:59:29,332 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 3ms
+2026-01-16 05:59:29,333 - Knowledge - INFO - Worker kw4 processing /app/data/T0002/199693/b35376z/react-employee-frontend/package.json
+2026-01-16 05:59:29,334 - Knowledge - INFO - knowledge worker kw8 start
+2026-01-16 05:59:29,335 - Knowledge - INFO - Worker kw9 created using shared MongoDB connection pool
+2026-01-16 05:59:29,335 - Knowledge - INFO - Fast-tracked /app/data/T0002/199693/b35376z/react-employee-frontend/src/index.js (ext=.js, size=550)
+2026-01-16 05:59:29,335 - Knowledge - INFO - Progress: 0.0% | Files: 0/16 | Rate: 0.00 files/sec | Queue: 0
+2026-01-16 05:59:29,336 - Knowledge - INFO - Fast-tracked /app/data/T0002/199693/b35376z/react-employee-frontend/package.json (ext=.json, size=835)
+2026-01-16 05:59:29,337 - Knowledge - INFO - knowledge worker kw9 start
+2026-01-16 05:59:29,337 - Knowledge - INFO - Worker kw10 created using shared MongoDB connection pool
+2026-01-16 05:59:29,337 - Knowledge - INFO - Worker kw3 processing /app/data/T0002/199693/b35376z/react-employee-frontend/src/setupTests.js
+2026-01-16 05:59:29,343 - Knowledge - INFO - Worker kw4 processing /app/data/T0002/199693/b35376z/react-employee-frontend/README.md
+2026-01-16 05:59:29,353 - Knowledge - INFO - Fast-tracked /app/data/T0002/199693/b35376z/react-employee-frontend/README.md (ext=.md, size=2891)
+2026-01-16 05:59:29,354 - Knowledge - INFO - knowledge worker kw10 start
+2026-01-16 05:59:29,354 - Knowledge - INFO - Worker kw11 created using shared MongoDB connection pool
+2026-01-16 05:59:29,358 - Knowledge - INFO - Fast-tracked /app/data/T0002/199693/b35376z/react-employee-frontend/src/setupTests.js (ext=.js, size=255)
+2026-01-16 05:59:29,358 - Knowledge - INFO - Worker kw4 processing /app/data/T0002/199693/b35376z/react-employee-frontend/public/index.html
+2026-01-16 05:59:29,361 - Knowledge - INFO - knowledge worker kw11 start
+2026-01-16 05:59:29,361 - Knowledge - INFO - Worker kw12 created using shared MongoDB connection pool
+2026-01-16 05:59:29,363 - Knowledge - INFO - Fast-tracked /app/data/T0002/199693/b35376z/react-employee-frontend/public/index.html (ext=.html, size=1721)
+2026-01-16 05:59:29,365 - Knowledge - INFO - knowledge worker kw12 start
+2026-01-16 05:59:29,368 - Knowledge - INFO - Worker kw13 created using shared MongoDB connection pool
+2026-01-16 05:59:29,383 - Knowledge - INFO - knowledge worker kw13 start
+2026-01-16 05:59:29,426 - Knowledge - INFO - Worker kw14 created using shared MongoDB connection pool
+2026-01-16 05:59:29,432 - Knowledge - INFO - knowledge worker kw14 start
+2026-01-16 05:59:29,433 - Knowledge - INFO - Worker kw15 created using shared MongoDB connection pool
+2026-01-16 05:59:29,453 - Knowledge - INFO - knowledge worker kw15 start
+2026-01-16 05:59:29,454 - Knowledge - INFO - Worker kw16 created using shared MongoDB connection pool
+2026-01-16 05:59:29,456 - Knowledge - INFO - knowledge worker kw16 start
+2026-01-16 05:59:29,465 - Knowledge - INFO - Processing batch of 4 files
+2026-01-16 05:59:29,465 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199693/b35376z/react-employee-frontend/src/index.css
+2026-01-16 05:59:29,470 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199693/b35376z/react-employee-frontend/package.json
+2026-01-16 05:59:29,474 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199693/b35376z/react-employee-frontend/README.md
+2026-01-16 05:59:29,476 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199693/b35376z/react-employee-frontend/public/index.html
+2026-01-16 05:59:33,641 - Knowledge - INFO - [LLM_CALL] Completed: UpdateEmployeeComponent.jsx:chunk1, Duration: 4209ms, PromptTokens: 2208, CompletionTokens: 422, Cost: $0.00039
+2026-01-16 05:59:33,653 - Knowledge - INFO - done ingest for /app/data/T0002/199693/b35376z/react-employee-frontend/src/components/UpdateEmployeeComponent.jsx
+2026-01-16 05:59:33,755 - Knowledge - INFO - [LLM_CALL] Completed: ListEmployeeComponent.jsx:chunk1, Duration: 4396ms, PromptTokens: 1878, CompletionTokens: 390, Cost: $0.00034
+2026-01-16 05:59:33,782 - Knowledge - INFO - done ingest for /app/data/T0002/199693/b35376z/react-employee-frontend/src/components/ListEmployeeComponent.jsx
+2026-01-16 05:59:34,191 - Knowledge - INFO - [LLM_CALL] Completed: serviceWorker.js:chunk1, Duration: 4820ms, PromptTokens: 2938, CompletionTokens: 404, Cost: $0.00046
+2026-01-16 05:59:34,193 - Knowledge - INFO - done ingest for /app/data/T0002/199693/b35376z/react-employee-frontend/src/serviceWorker.js
+2026-01-16 05:59:34,491 - Knowledge - INFO - Processing batch of 4 files
+2026-01-16 05:59:34,492 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199693/b35376z/react-employee-frontend/src/App.css
+2026-01-16 05:59:34,514 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199693/b35376z/react-employee-frontend/src/services/EmployeeService.js
+2026-01-16 05:59:34,579 - Knowledge - INFO - [LLM_CALL] Completed: CreateEmployeeComponent.jsx:chunk1, Duration: 5224ms, PromptTokens: 2446, CompletionTokens: 408, Cost: $0.00041
+2026-01-16 05:59:34,580 - Knowledge - INFO - done ingest for /app/data/T0002/199693/b35376z/react-employee-frontend/src/components/CreateEmployeeComponent.jsx
+2026-01-16 05:59:34,590 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199693/b35376z/react-employee-frontend/src/App.js
+2026-01-16 05:59:34,593 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199693/b35376z/react-employee-frontend/src/components/ListEmployeeComponent.jsx
+2026-01-16 05:59:34,603 - Knowledge - INFO - Processing batch of 4 files
+2026-01-16 05:59:34,604 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199693/b35376z/react-employee-frontend/src/components/HeaderComponent.js
+2026-01-16 05:59:34,681 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199693/b35376z/react-employee-frontend/src/serviceWorker.js
+2026-01-16 05:59:34,682 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199693/b35376z/react-employee-frontend/src/index.js
+2026-01-16 05:59:34,684 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199693/b35376z/react-employee-frontend/src/setupTests.js
+2026-01-16 05:59:34,796 - Knowledge - INFO - Processing batch of 4 files
+2026-01-16 05:59:34,797 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199693/b35376z/react-employee-frontend/src/components/CreateEmployeeComponent.jsx
+2026-01-16 05:59:34,798 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199693/b35376z/react-employee-frontend/src/components/ViewEmployeeComponent.jsx
+2026-01-16 05:59:34,854 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199693/b35376z/react-employee-frontend/src/components/UpdateEmployeeComponent.jsx
+2026-01-16 05:59:34,914 - Knowledge - INFO - process ingested knowledge for /app/data/T0002/199693/b35376z/react-employee-frontend/src/components/FooterComponent.jsx
+2026-01-16 05:59:35,126 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 244, Duration: 0ms
+2026-01-16 05:59:35,127 - Knowledge - INFO - [WEBSOCKET] Sent: Type=unknown, Size: ?, Duration: 1ms
+2026-01-16 05:59:35,127 - Knowledge - INFO - Progress: 100.0% | Files: 16/16 | Rate: 2.20 files/sec | Queue: 0
+2026-01-16 05:59:35,350 - Knowledge - INFO - Knowledge creation complete
+2026-01-16 05:59:35,351 - Knowledge - INFO - ==================================================
+2026-01-16 05:59:35,351 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2026-01-16 05:59:35,351 - Knowledge - INFO - ==================================================
+2026-01-16 05:59:35,351 - Knowledge - INFO - Total processing time: 7.48 seconds (0.12 minutes)
+2026-01-16 05:59:35,352 - Knowledge - INFO - Files processed: 0
+2026-01-16 05:59:35,352 - Knowledge - INFO - Processing rate: 0.00 files/second
+2026-01-16 05:59:35,352 - Knowledge - INFO - 
+[TIME_BREAKDOWN]
+2026-01-16 05:59:35,353 - Knowledge - INFO - File Reading: 0.00s (0.0%)
+2026-01-16 05:59:35,353 - Knowledge - INFO - LLM Processing: 18.65s (249.4%)
+2026-01-16 05:59:35,353 - Knowledge - INFO - MongoDB Operations: 0.00s (0.0%)
+2026-01-16 05:59:35,354 - Knowledge - INFO - Redis Operations: 0.00s (0.0%)
+2026-01-16 05:59:35,354 - Knowledge - INFO - WebSocket Communication: 0.00s (0.1%)
+2026-01-16 05:59:35,355 - Knowledge - INFO - 
+[LLM_STATS]
+2026-01-16 05:59:35,355 - Knowledge - INFO - Total LLM calls: 4
+2026-01-16 05:59:35,355 - Knowledge - INFO - Average LLM response time: 4662ms
+2026-01-16 05:59:35,356 - Knowledge - INFO - Average prompt tokens: 2367.5
+2026-01-16 05:59:35,356 - Knowledge - INFO - Average completion tokens: 406.0
+2026-01-16 05:59:35,356 - Knowledge - INFO - Total prompt tokens: 9470
+2026-01-16 05:59:35,356 - Knowledge - INFO - Total completion tokens: 1624
+2026-01-16 05:59:35,357 - Knowledge - INFO - Total LLM cost: $0.0016
+2026-01-16 05:59:35,357 - Knowledge - INFO - 
+[DATABASE_STATS]
+2026-01-16 05:59:35,357 - Knowledge - INFO - MongoDB operations: 0
+2026-01-16 05:59:35,358 - Knowledge - INFO - Redis operations: 0
+2026-01-16 05:59:35,359 - Knowledge - INFO - 
+[COMMUNICATION_STATS]
+2026-01-16 05:59:35,359 - Knowledge - INFO - WebSocket messages sent: 5
+2026-01-16 05:59:35,359 - Knowledge - INFO - Average message size: 112.4 bytes
+2026-01-16 05:59:35,360 - Knowledge - INFO - 
+[WORKER_STATS]
+2026-01-16 05:59:35,360 - Knowledge - INFO - 
+[FILE_TYPE_STATS]
+2026-01-16 05:59:35,360 - Knowledge - INFO - 
+[SLOWEST_FILES]
+2026-01-16 05:59:35,361 - Knowledge - INFO - ==================================================
+2026-01-16 05:59:35,361 - Knowledge - INFO - ==================================================
+2026-01-16 05:59:35,361 - Knowledge - INFO - KNOWLEDGE GRAPH GENERATION PERFORMANCE SUMMARY
+2026-01-16 05:59:35,361 - Knowledge - INFO - ==================================================
+2026-01-16 05:59:35,362 - Knowledge - INFO - Total processing time: 7.55 seconds (0.13 minutes)
+2026-01-16 05:59:35,362 - Knowledge - INFO - Files processed: 16 of 16
+2026-01-16 05:59:35,362 - Knowledge - INFO - Processing rate: 2.12 files/second
+2026-01-16 05:59:35,362 - Knowledge - INFO - WebSocket messages sent: 2
+2026-01-16 05:59:35,363 - Knowledge - INFO - MongoDB operations: 16
+2026-01-16 05:59:35,363 - Knowledge - INFO - Average MongoDB ops per file: 1.00
+2026-01-16 05:59:35,363 - Knowledge - INFO - LLM costs: $0.0016
+2026-01-16 05:59:35,364 - Knowledge - INFO - Prompt tokens: 9470
+2026-01-16 05:59:35,364 - Knowledge - INFO - Completion tokens: 1624
+2026-01-16 05:59:35,364 - Knowledge - INFO - Updating org costs, total cost: 0.0015965999999999997
+2026-01-16 05:59:36,786 - Knowledge - INFO - [WEBSOCKET] Sent: Type=progress_update, Size: 242, Duration: 0ms
+2026-01-16 05:59:36,788 - Knowledge - INFO - Saving knowledge to Redis...
+2026-01-16 05:59:36,798 - Knowledge - INFO - Knowledge saved to Redis successfully
+2026-01-16 05:59:36,871 - Knowledge - INFO - Wrote knowledge bundle: /app/data/T0002/199693/b35376z/react-employee-frontend/.knowledge.zip
